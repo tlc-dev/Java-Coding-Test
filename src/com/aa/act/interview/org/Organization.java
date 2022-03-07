@@ -22,24 +22,12 @@ public abstract class Organization {
 	 * @param title
 	 * @return the newly filled position or empty if no position has that title
 	 */
-	/*public Optional<Position> hire(Name person, String title) {
-		//System.out.println(person.convertNameToString() + ": " + title);
-		this.person = person;
-		this.title = title;
-		Employee testEmp = new Employee(0, person);
-		Position posit = new Position(title, testEmp);
-		posit.setEmployee(Optional.of(testEmp));
-		//System.out.println(posit.toString() + ": " + posit.getTitle());
-		return Optional.of(posit);
-	}*/
 	
 	public Optional<Position> hire(Name person, String title) {
 		Random rand = new Random();
 		Employee testEmp = new Employee(rand.nextInt(10000), person);
 		
-		//root = new Position(title, testEmp);
-		
-		
+		//root = new Position(title, testEmp);		
 		
 		
 		Position posit = new Position(title, testEmp);
